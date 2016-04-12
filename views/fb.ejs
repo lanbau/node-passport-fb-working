@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FB or Github authentication</title>
+</head>
+<body>
+  <h1>FACEBOOK/Github LOGIN USING PASSPORT</h1>
+  <div>
+
+      <% if(user != undefined){%>
+        <h2> Below is the data sent by facebook</h2>
+        <pre>
+
+        <%= //user.fb %>
+        <a href="/logout">Logout</a>
+      <% } else {%>
+        <a href="/auth/facebook">Login with Facebook</a>
+        <a href="/auth/github">Login with Github</a>
+      <% }%>
+  </div>
+</body>
+</html>
